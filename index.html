@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakesh Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e2eddf5f87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!------------------------------nav and title-------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Extaroptions">Skills</a></li>
+                    <li><a href="#services">My Experince</a></li>
+                    <li><a href="#portpolio">My Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Hello,my name is</p>
+                <h1> Rakesh Kasarla<br><h2>And I'm a <span class="auto-type"></span></h2></h1>
+            </div>
+        </div>
+    </div>
+<!-----------------------------about------------------------------------- ------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1><br><br>
+                <p>1.5 years of IT experience from TCS and 4 months of internship as a ML Engineer in ineuron.io, looking for transition to the Data Scientist Role. With interest in analyzing raw data and statistics, brings excellent communication abilities with hands-on experience in building machine learning models with deployment.
+                I am not only having good programming skills and training ML models but I can also excellently do the time management, with the ability to prioritize and multitask and work under shifting deadlines in a fast-paced environment. I have strong analytical and interpersonal skills, experience in data interpretation demonstrated ability to learn quickly. Kindly go through the project section, 
+                    my <b><a href="https://www.linkedin.com/in/kasarla-rakesh-268b181b9">LinkedIn</a></b> and my <b><a href="https://github.com/Rakesh5699">GitHub</a></b> to know more about me.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------Skils---------------------------------------------->
+<div id="Extaroptions">
+    <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div class="tab-titiles">
+            <b><p class="tab-links active-link" onclick="opentab('PL')">Programmings</p></b>
+            <b><p class="tab-links" onclick="opentab('dbs')">Databases</p></b>
+            <b><p class="tab-links" onclick="opentab('wd')">Web Development</p></b>
+            <b><p class="tab-links" onclick="opentab('pl')">Libraries</p></b>
+            <b><p class="tab-links" onclick="opentab('dev')">Deployment</p></b>
+            <b><p class="tab-links" onclick="opentab('tools')">Tools</p></b>
+        </div>
+        <div class="tab-contents active-tab" id="PL">
+            <img src="images/python.png" alt="Python"/>
+            <img src="images/c.png" alt="C Language"/>
+            <img src="images/plsql.png" alt="PL/SQL" />  
+            <img src="images/shell.jpeg" alt="shell scripting"/>  
+        </div>
+        <div class="tab-contents" id="dbs">
+            <img src="images/sql.jpeg" alt="sql"/>
+            <img src="images/oracle.jpeg" alt="oracle"/>
+            <img src="images/lite.jpeg" alt="SQLlite" />  
+            <img src="images/mango.jpeg" alt="mongodb"/> 
+        </div>
+        <div class="tab-contents" id="wd">
+            <img src="images/html.jpeg" alt="html"/>
+            <img src="images/css.jpeg" alt="css"/>
+            <img src="images/js.jpeg" alt="js" />  
+            <img src="images/flask.jpeg" alt="flask"/> 
+            <img src="images/django.jpeg" alt="django"/>
+        </div>
+        <div class="tab-contents" id="pl">
+            <img src="images/pd.jpeg" alt="Pandas"/>
+            <img src="images/np.jpeg" alt="numpy"/>
+            <img src="images/sklearn.jpeg" alt="sklearn" />  
+            <img src="images/tf.jpeg" alt="TenserFlow"/> 
+            <img src="images/soup.jpeg" alt="beatifulsoups"/>
+            <img src="images/sns.jpeg" alt="seaborn"/> 
+            <img src="images/plt.jpeg" alt="matplotlib"/>
+        </div>
+        <div class="tab-contents" id="dev">
+            <img src="images/heroku.jpeg" alt="heroku"/>
+            <img src="images/cricleci.jpeg" alt="circle ci"/>
+            <img src="images/mlflow.jpeg" alt="ml flow" />  
+            <img src="images/docker.jpeg" alt="docker"/> 
+            <img src="images/gitactions.jpeg" alt="github actions"/>
+        </div>
+        <div class="tab-contents" id="tools">
+            <img src="images/pycharm.jpeg" alt="pycharm"/>
+            <img src="images/anaconda.jpeg" alt="canaconda"/>
+            <img src="images/vscode.jpeg" alt="vscode" />  
+            <img src="images/jupyter.jpeg" alt="jupyter"/> 
+            <img src="images/colab.jpeg" alt="google colab"/>
+            <img src="images/github.jpeg" alt="google colab"/>
+        </div>
+    </div>
+</div><br>
+
+<!-----------------------------Experince---------------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Experince</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-plane-circle-check"></i>
+                <b><p class="intenshiop-title">August2022 to Present</p></b>
+                <h2>Flight Fare Prediction</h2>
+                <p>Travelling through flights has become an integral part of today’s lifestyle as more and
+                    more people are opting for faster travelling options. The flight ticket prices increase or
+                    decrease every now and then depending on various factors like timing of the flights,
+                    destination, and duration of flights various occasions such as vacations or festive
+                    season. Therefore, having some basic idea of the flight fares before planning the trip will
+                    surely help many people save money and time.
+                    <b>The main goal is to predict the fares of the flights based on different factors available in
+                    the provided dataset.</b></p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-credit-card"></i>
+                <b><p class="intenshiop-title">June2022 to August 2022</p></b>
+                <h2>Credit Card Default Prediction</h2>
+                <p>Financial threats are displaying a trend about the credit risk of commercial banks as the
+                    incredible improvement in the financial industry has arisen. In this way, one of the
+                    biggest threats faces by commercial banks is the risk prediction of credit clients. The
+                    goal is to predict the probability of credit default based on credit card owner's
+                    characteristics and payment history.</p>
+                
+                <a href="#">Learn More</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<!-----------------------------Protpolio---------------------------------------------->
+<div id="portpolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3> Social Media App</h3>
+                    <p> This is a kust one social media app</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3> Social Media App</h3>
+                    <p> This is a kust one social media app</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3> Social Media App</h3>
+                    <p> This is a kust one social media app</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a class="btn" href="#">See More</a>
+    </div>
+</div>
+
+<!-----------------------------Contact Me---------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>kasarlarakesh98@hmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9491357015</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="images/Rakesh.pdf" download class="btn btn-2" >Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea type="text" name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn-2">Submit</button>
+                </form>
+                <span id="msg"></span> 
+              
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> by Rakesh Kasarla</p>
+        
+    </div>
+</div>
+
+
+
+
+<!-----------------------------JavaScript---------------------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings:["Python Developer","Data Scientist","ML Engineer"],
+            typedSpeed:150,
+            backSpeed:150,
+            loop:true
+        })
+    </script>
+
+<script>
+    /*-------------------------Javascript for about-------------------------------------*/
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    /*-------------------------Javascript for menu-------------------------------------*/
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+
+</script>
+
+
+<!----------------This is to save the used to save contact information -------------------->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwyyM1oJrxX7s20sgNbNxQdij4HYelw4QvAEZBK8JL-sN6j7j9FHPZpscyMmSOnMIRcCA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML ="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
